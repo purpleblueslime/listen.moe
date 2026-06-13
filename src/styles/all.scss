@@ -1,0 +1,118 @@
+body {
+  background-color: transparent;
+  color: #fff;
+  cursor: default;
+  height: 110px;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+  width: 220px;
+}
+
+img {
+  object-fit: cover;
+  // user-drag: none; this dont work ;-;
+  -webkit-user-drag: none; // just a css thing
+}
+
+#app {
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.banner {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.moe {
+  backdrop-filter: blur(80px);
+  height: 100%;
+  width: 100%;
+}
+
+.startup {
+  height: 80px;
+  justify-content: center;
+  opacity: 0.5;
+}
+
+.box,
+.startup {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  padding: 10px 10px 0px 10px;
+}
+
+.cover {
+  border-radius: 10px;
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+  width: 80px;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.pop,
+.blur {
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 1s;
+  width: 100%;
+}
+
+.blur {
+  opacity: 1;
+}
+
+.pop:hover {
+  opacity: 1;
+}
+
+.icon {
+  height: 40px;
+  padding: 20px;
+  width: 40px;
+}
+
+.about {
+  align-content: center;
+  display: grid;
+  font-weight: 900;
+  gap: 2px;
+  height: 80px;
+  overflow: auto;
+  scrollbar-color: #ffffff80 transparent;
+  scrollbar-width: thin;
+  width: 110px;
+}
+
+.artist {
+  opacity: 0.5;
+}
+
+.bar {
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 4px;
+  margin: 8px 60px 8px 60px;
+  opacity: 0.5;
+}
